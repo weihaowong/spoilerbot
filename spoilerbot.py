@@ -11,7 +11,7 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def help(m):
-    bot.send_message(m.chat.id, 'Send any text to me and I will return you the text in spoiler formatting like this: <tg-spoiler>Hello!</tg-spoiler>\n\nYou can use me in inline mode as well! Type @spoilerbot in the message field and type anything. Tap on the pop-up and you will get the text in spoiler formatting! \n\nPlease make sure that you have updated Telegram to the latest version. \n\n\nDeveloped by @whbots', parse_mode='HTML')
+    bot.send_message(m.chat.id, 'Send any text to me and I will return you the text in spoiler formatting like this: <tg-spoiler>Hello!</tg-spoiler>\n\nYou can use me in inline mode as well! Type @spoilerbot in the message field and type anything. Tap on the pop-up and you will get the text in spoiler formatting! \n\nPlease make sure that you have updated Telegram to the latest version. \n\n\nGitHub: https://github.com/weihaowong/spoilerbot\nDeveloped by @whbots', parse_mode='HTML')
 
 @bot.message_handler(content_types='text')
 def receive(m):
