@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 from telebot import util
 
-bot = telebot.TeleBot("5204902361:AAHezIn8IjmOw1frFjohfjwqxARYcHfUr4E", parse_mode=None)
+bot = telebot.TeleBot("bot token", parse_mode=None)
 
 @bot.message_handler(commands=['start', 'spoiler'])
 def start(message):
